@@ -1,11 +1,81 @@
-@charset "UTF-8";
-
-h1 {
-	color: green;
-	font-size: 25px;
-	text-align: center;
+body {
+	margin: 0;
+	font-family: sans-serif;
+	background: white;
+	color: #333;
 }
 
-p {
-	border: 11px solid blue;
+/* 全体コンテナ */
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+/* ヘッダー */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #f5f5f5;
+	;
+	padding: 15px 20px;
+}
+
+.title {
+	margin: 0;
+	font-size: 20px;
+}
+
+/* メニュー */
+.menu-group {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.menu-item {
+	list-style: none;
+	padding: 10px;
+}
+
+/* プロフィール上部 */
+.profile-box {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+/* 写真 */
+.photo {
+	width: 140px;
+	height: 140px;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 3px solid #ddd;
+}
+
+/* 情報 */
+.profile-info .info {
+	display: flex;
+	gap: 8px;
+	margin: 6px 0;
+}
+
+.info h3,
+.info p {
+	margin: 0;
+}
+
+/* セクションタイトル */
+.section-title {
+	border-bottom: 2px solid #333;
+	padding-bottom: 5px;
+	margin-top: 30px;
+}
+
+/* テキスト */
+.text {
+	line-height: 1.8;
 }
